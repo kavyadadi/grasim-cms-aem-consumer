@@ -1,0 +1,22 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-call="${clientLib.css @ categories='contact-form-submit'}" />
+<sly data-sly-call="${clientLib.js @ categories='contact-form-submit'}" />
+<sly data-sly-use.model="com.grasimconsumer.core.models.ContactFormSubmit"></sly>
+
+
+<div class="cmp-ContactUs_main">
+  <div class="cmp-contactUs_button">
+
+                 <a href="${model.goToHomepageURL}.html" type="submit"class="btn cmp-contactUs-btn" >${model.goToHomepageLabel}</a>
+   </div>
+
+
+    <div class="cmp-contactUs_call">
+
+            <p><a href="${model.callCenterURL}.html">${model.callCenterLabel}</a></p>
+
+    </div>
+</div>
+
+
+

@@ -1,0 +1,29 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-call="${clientLib.css @ categories='contact-us-form'}" />
+<sly data-sly-call="${clientLib.js @ categories='contact-us-form'}" />
+<sly data-sly-use.model="com.grasimconsumer.core.models.ContactUsFormArticles"></sly>
+
+<div class="cmp-ContactUs_main">
+      <div class="container cmp-ContactUs_container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12 col-md-12 col-12">
+          <form action="">
+            <div class="cmp-ContactUs_input" data-sly-list.data="${model.contactUsFormItems}">
+            <label for="text" class="form-label">${data.fieldTitle}</label>
+            <input type="text" class="form-control" id="${data.name}" placeholder="${data.placeHolder}" name="${data.name}">
+          </div>
+            <div class="cmp-ContactUs_textarea">
+              <label for="comment">${model.commentsLabel}</label>
+              <textarea class="form-control-textarea" rows="5" id="${model.commentsName}" name="text" placeholder="${model.commentsPlaceHolder}"></textarea>
+            </div>
+            <div class="cmp-contactUs_button">
+                 <a href="${model.submitCTAURL}.html" type="submit"class="btn cmp-contactUs-btn" >${model.submitCTALabel}</a>
+            </div>
+        </form>
+        <div class="cmp-contactUs_call">
+            <p><a href="${model.ctaURL}.html">${model.ctaLabel}</a></p>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>

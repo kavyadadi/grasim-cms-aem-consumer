@@ -1,0 +1,60 @@
+.cmp-ContactUs_body{
+    background-color: #EBECF0;
+}
+.cmp-ContactUs_container{
+    max-width: 360px !important;
+}
+.form-control{background:#e7e8e9;padding:20px;width: 330px;height:64px;}
+
+.form-control-textarea{
+    background:#e7e8e9;padding:20px;width:330px;height:160px;
+}
+.cmp-ContactUs_input input{
+   background: #E7E8E9;
+   border: 1px solid #FFFFFF;
+   box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.16);
+   border-radius: 8px;
+   font-size: 18px;
+   height: 55px;
+   margin-bottom: 10px;
+}
+.cmp-ContactUs_textarea label{
+   margin-bottom: 18px;
+}
+.cmp-ContactUs_textarea textarea{
+    background-color: #EBECF0;
+    margin-bottom: 30px;
+    border-radius:8px;
+}
+.cmp-ContactUs_textarea{
+ padding: 10px 15px;
+}
+.cmp-contactUs-btn {
+    color: #34383C;
+width: fit-content;
+    height:60px;
+background: #E7E8E9;
+box-shadow: -3px -4px 6px #FFFFFF, 2.25439px 1.50292px 6.0117px 1.50292px rgba(54, 54, 54, 0.24);
+border-radius: 8px;
+margin: auto;
+display: flex;
+justify-content:center;
+text-align: center;
+align-items: center;
+}
+.cmp-contactUs_button{
+    display: flex;
+}
+.cmp-ContactUs_input{
+    padding: 10px 15px;
+    font-size:18px;
+}
+.cmp-contactUs_call{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #434343;
+    text-decoration: underline;
+    margin-top:24px;
+}

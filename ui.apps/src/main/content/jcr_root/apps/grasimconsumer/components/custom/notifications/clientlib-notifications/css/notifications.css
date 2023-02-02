@@ -1,0 +1,25 @@
+.cmp-notifications-btn {
+    color: #34383C;
+    width: fit-content;
+    background: #E7E8E9;
+    box-shadow: -3px -4px 6px #FFFFFF, 2.25439px 1.50292px 6.0117px 1.50292px rgba(54, 54, 54, 0.24);
+    border-radius: 8px;
+    margin: auto;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    margin-top:36px;
+}
+.cmp-notifications_button{
+    display: flex;
+}
+.cmp-notifications_imageContainer{
+  width: 260px;
+  height: 184px;
+  left: 0px;
+  top: 0px;
+  background: #EBECF0;
+  box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+}

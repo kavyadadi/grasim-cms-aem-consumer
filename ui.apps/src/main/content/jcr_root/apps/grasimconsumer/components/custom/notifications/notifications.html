@@ -1,0 +1,13 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-call="${clientLib.css @ categories='notifications'}" />
+<sly data-sly-call="${clientLib.js @ categories='notifications'}" />
+<sly data-sly-use.model="com.grasimconsumer.core.models.ContactUsFormArticles"></sly>
+
+<div class="cmp-notifications_main">
+
+      <div class=".cmp-notifications_imageContainer"></div>
+      <div class="cmp-notifications_button">
+           <a href="${model.submitCTAURL}.html" type="submit"class="btn cmp-notifications-btn" >${model.submitCTALabel}</a>
+      </div>
+
+</div>

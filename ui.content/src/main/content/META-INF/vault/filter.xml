@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/grasimconsumer" mode="merge"/>
+    <filter root="/content/grasimconsumer" mode="merge"/>
+    <filter root="/content/dam/grasimconsumer/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/grasimconsumer" mode="merge"/>
+</workspaceFilter>

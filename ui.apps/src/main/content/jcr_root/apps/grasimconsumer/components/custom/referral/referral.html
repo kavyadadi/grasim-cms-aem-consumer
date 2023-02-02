@@ -1,0 +1,36 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-call="${clientLib.css @ categories='referral'}" />
+<sly data-sly-call="${clientLib.js @ categories='referral'}" />
+<sly data-sly-use.model="com.grasimconsumer.core.models.ContactUsFormArticles"></sly>
+
+ <div class="cmp-ContactUs_main">
+
+   <div class="container cmp-referral_container">
+        <div>
+            <p>First Name</p>
+        </div>
+        <div class="textcolor">
+            <p>9876543210</p>
+        </div>
+        <div class="textcolor">
+            <p>username@gmail.com</p>
+        </div>
+
+        <div class="cmp-contactUs_call">
+            <p><a href="${model.ctaURL}.html">${model.ctaLabel}</a></p>
+        </div>
+   </div>
+
+
+   <div class="subcontainer"> 
+
+
+   <div><p>${model.text}: username@gmail.com</p></div> 
+
+   <div class="w-175"><p>${model.text2} </p></div>
+
+</div>
+
+
+
+</div>

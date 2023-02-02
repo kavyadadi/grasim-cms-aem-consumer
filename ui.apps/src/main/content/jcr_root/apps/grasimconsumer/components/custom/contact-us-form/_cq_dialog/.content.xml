@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Contact Us Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem_cmp_container_v1">
+    <content
+        granite:class="cmp-container__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <contact-us-form-items
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldLabel="Contact Us Form Items"
+                        required="{Boolean}false">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Contact Us Form Fields"
+                            sling:resourceType="granite/ui/components/coral/foundation/well"
+                            name="./contactUsFormItems">
+                            <items jcr:primaryType="nt:unstructured">
+                                <field-label
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Add Field Label"
+                                    fieldLabel="Field Label"
+                                    name="./fieldTitle"
+                                    useFixedInlineToolbar="{Boolean}true"/>
+                                <place-holder
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Add Place Holder Text"
+                                    fieldLabel="Place Holder"
+                                    name="./placeHolder"
+                                    useFixedInlineToolbar="{Boolean}true"/>
+                                <name
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Add Field Name"
+                                    fieldLabel="Field Name"
+                                    name="./name"
+                                    useFixedInlineToolbar="{Boolean}true"/>
+                            </items>
+                        </field>
+                    </contact-us-form-items>
+                    <ctaLabel
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Add CTA Label"
+                        fieldLabel="CTA Label"
+                        name="./ctaLabel"
+                        useFixedInlineToolbar="{Boolean}true"/>
+                    <ctaURL
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldDescription="Add CTA URL"
+                        fieldLabel="CTA URL"
+                        name="./ctaURL"
+                        rootPath="/content/grasim-com"/>
+                    <submit-ctaLabel
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Add Submit CTA Label"
+                        fieldLabel="Submit CTA Label"
+                        name="./submitCTALabel"
+                        useFixedInlineToolbar="{Boolean}true"/>
+                    <submit-ctaURL
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldDescription="Add Submit CTA URL"
+                        fieldLabel="Submit CTA URL"
+                        name="./submitCTAURL"
+                        rootPath="/content/grasim-com/in/en"/>
+                    <comments-label
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Add Comments Field Label"
+                        fieldLabel="Comments Field Label"
+                        name="./commentsLabel"
+                        useFixedInlineToolbar="{Boolean}true"/>
+                    <comments-placeholder
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Add Comments Placeholder"
+                        fieldLabel="Comments Placeholder"
+                        name="./commentsPlaceHolder"
+                        useFixedInlineToolbar="{Boolean}true"/>
+                    <comments-name
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldDescription="Add Comments Name"
+                        fieldLabel="Comments Name"
+                        name="./commentsName"
+                        useFixedInlineToolbar="{Boolean}true"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>
